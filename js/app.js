@@ -69,7 +69,7 @@
     $('cDias').textContent = 'Día ' + corridos + ' de ' + total +
       (activa ? ' · termina el ' + fechaLarga(c.fin) : ' · terminó el ' + fechaLarga(c.fin));
     requestAnimationFrame(function () {
-      $('cBar').style.width = (corridos / total * 100) + '%';
+      $('cBar').style.transform = 'scaleX(' + (corridos / total) + ')';
     });
 
     renderChart(dias, data.actualizado);

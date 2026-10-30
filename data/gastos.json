@@ -1,0 +1,47 @@
+{
+  "moneda": "MXN",
+  "actualizado": "2026-10-29",
+  "fuente": "Administrador de anuncios de Meta",
+  "campana": {
+    "nombre": "Recolectora – Mensajes WhatsApp – Negocios – Oct 2026",
+    "objetivo": "Conversaciones por WhatsApp con negocios",
+    "presupuestoDiario": 50,
+    "inicio": "2026-10-24",
+    "fin": "2026-11-02",
+    "zona": "Rosarito y 15 km a la redonda"
+  },
+  "totales": {
+    "alcance": 4183
+  },
+  "anuncios": [
+    {
+      "id": "video-rosie",
+      "nombre": "Video Rosie",
+      "tipo": "Video 39 s",
+      "inicio": "2026-10-24",
+      "gasto": 268.29,
+      "conversaciones": 18,
+      "impresiones": 7437,
+      "alcance": 4183
+    },
+    {
+      "id": "flyer-precios",
+      "nombre": "Flyer de precios",
+      "tipo": "Imagen",
+      "inicio": "2026-10-29",
+      "gasto": 0,
+      "conversaciones": 0,
+      "impresiones": 0,
+      "alcance": 0,
+      "nota": "Publicado el 29 de octubre; en revisión de Meta."
+    }
+  ],
+  "dias": [
+    { "fecha": "2026-10-24", "gasto": 26.76, "conversaciones": 5, "impresiones": 661, "alcance": 560 },
+    { "fecha": "2026-10-25", "gasto": 30.87, "conversaciones": 0, "impresiones": 861, "alcance": 727 },
+    { "fecha": "2026-10-26", "gasto": 52.86, "conversaciones": 5, "impresiones": 1592, "alcance": 1314 },
+    { "fecha": "2026-10-27", "gasto": 63.20, "conversaciones": 3, "impresiones": 1951, "alcance": 1604 },
+    { "fecha": "2026-10-28", "gasto": 52.28, "conversaciones": 4, "impresiones": 1314, "alcance": 1051 },
+    { "fecha": "2026-10-29", "gasto": 42.32, "conversaciones": 1, "impresiones": 1058, "alcance": 900 }
+  ]
+}

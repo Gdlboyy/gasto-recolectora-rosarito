@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Gasto Meta · Recolectora Rosarito</title>
+<link rel="icon" href="assets/rr-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=1">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <span class="bg-glow g1"></span>
+  <span class="bg-glow g2"></span>
+</div>
+
+<div class="wrap">
+
+  <header class="top">
+    <img class="logo" src="assets/rr-icon.png" alt="Recolectora Rosarito">
+    <div>
+      <p class="eyebrow">Recolectora Rosarito</p>
+      <h1>Gasto en publicidad de Meta</h1>
+    </div>
+  </header>
+  <p class="sub">Cuánto se ha invertido en anuncios de Facebook e Instagram y cuántas conversaciones de WhatsApp se han iniciado. Los datos salen del Administrador de anuncios de Meta.</p>
+
+  <section class="kpis" aria-label="Resumen">
+    <div class="kpi main">
+      <div class="kpi-num"><span class="cur">$</span><span id="kGasto">0</span></div>
+      <div class="kpi-lab">invertido</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-num" id="kConv">0</div>
+      <div class="kpi-lab">conversaciones iniciadas</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-num"><span class="cur">$</span><span id="kCosto">0</span></div>
+      <div class="kpi-lab">por conversación</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-num" id="kAlcance">0</div>
+      <div class="kpi-lab">personas alcanzadas</div>
+    </div>
+  </section>
+
+  <section class="card camp" aria-label="Campaña">
+    <div class="camp-head">
+      <span class="badge" id="cEstado">ACTIVA</span>
+      <span class="camp-name" id="cNombre"></span>
+    </div>
+    <dl class="camp-grid">
+      <div><dt>Periodo</dt><dd id="cPeriodo"></dd></div>
+      <div><dt>Presupuesto</dt><dd id="cPresupuesto"></dd></div>
+      <div><dt>Objetivo</dt><dd id="cObjetivo"></dd></div>
+      <div><dt>Zona</dt><dd id="cZona"></dd></div>
+    </dl>
+    <div class="progress" aria-hidden="true"><span id="cBar"></span></div>
+    <p class="camp-note" id="cDias"></p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Día por día</h2>
+      <div class="legend">
+        <span><i class="sw sw-gasto"></i>Gasto</span>
+        <span><i class="sw sw-conv"></i>Conversaciones</span>
+      </div>
+    </div>
+    <div class="card">
+      <div id="chart" class="chart" role="img" aria-label="Gráfica de gasto y conversaciones por día"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Por anuncio</h2></div>
+    <div class="ads" id="ads"></div>
+  </section>
+
+  <section>
+    <button class="toggle" id="tblToggle" type="button" aria-expanded="false" aria-controls="tblWrap">
+      Ver tabla de días
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tbl-wrap" id="tblWrap" hidden>
+      <table class="tbl">
+        <thead><tr><th>Día</th><th>Gasto</th><th>Conv.</th><th>Costo / conv.</th><th>Impresiones</th></tr></thead>
+        <tbody id="tblBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span><b>Fuente:</b> <span id="fFuente"></span></span>
+    <span><b>Última actualización:</b> <span id="fActualizado">—</span></span>
+    <span><b>Nota:</b> pesos mexicanos (MXN), sin IVA, tal como los muestra Meta. El último día puede estar incompleto.</span>
+  </footer>
+
+</div>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>
